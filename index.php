@@ -25,6 +25,13 @@
 			}
 			fclose($open);
 			}
+		if(empty($_GET)){
+			foreach($vals as $val){
+				$i++;
+				$records = $i -1;
+				echo '<center><a href='.'"http://web.njit.edu/~ens3/is218Pro/index.php?record='.$records.'"'.'>'.$name[$records].'</a></center>';
+				echo '</p>';
+				}
 		}
 		$val = $vlas[$_GET['record']];
 		echo"<table border='1' align='center'>";

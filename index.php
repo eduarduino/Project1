@@ -33,7 +33,7 @@
 				echo '</p>';
 				}
 		}
-		$val = $vals[$_GET['record']];
+		$val = $vals[$_GET['val']];
 		echo"<table border='1' align='center'>";
 		foreach($val as $csvName => $actName){
 			echo"<tr>";

@@ -33,7 +33,7 @@
 				echo '</p>';
 				}
 		}
-		$val = $vlas[$_GET['record']];
+		$val = $vals[$_GET['record']];
 		echo"<table border='1' align='center'>";
 		foreach($val as $csvName => $actName){
 			echo"<tr>";
@@ -41,6 +41,8 @@
 			echo"</tr>";
 		}
 		echo "</table>";
+		}
+	}
 	$newfile = new csvFile();
 	$newfile->readcsv("hd2013.csv", true);
 	?>

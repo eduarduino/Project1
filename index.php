@@ -33,6 +33,7 @@
 			echo"<th>$csvName</th><td>$actName</td>";
 			echo"</tr>";
 		}
+		echo "</table>";
 	$newfile = new csvFile();
 	$newfile->readcsv("hd2013.csv", true);
 	?>

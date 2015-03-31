@@ -26,7 +26,13 @@
 			fclose($open);
 			}
 		}
-		
+		$val = $vlas[$_GET['record']];
+		echo"<table border='1' align='center'>";
+		foreach($val as $csvName => $actName){
+			echo"<tr>";
+			echo"<th>$csvName</th><td>$actName</td>";
+			echo"</tr>";
+		}
 	$newfile = new csvFile();
 	$newfile->readcsv("hd2013.csv", true);
 	?>

@@ -19,8 +19,8 @@
 				}
 				else{
 					$record = array_combine($column, $row);
-					$name[] = $row[1];
 					$vals[] = $val;
+					$name[] = $row[1];					
 				}
 			}
 			fclose($open);
@@ -33,7 +33,7 @@
 				echo '</p>';
 				}
 		}
-		$val = $vals[$_GET['val']];
+		$val = $vals[$_GET['records']];
 		echo"<table border='1' align='center'>";
 		foreach($val as $csvName => $actName){
 			echo"<tr>";

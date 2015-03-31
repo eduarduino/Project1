@@ -4,7 +4,7 @@
 </head>
 
 <body>
-<p align="center">Integrated Post Secondary Educational Data System</p>
+<p align="center"><b>Integrated Post Secondary Educational Data System</b></p>
 	<?php
 		echo "Hello world!";
 	?>
